@@ -1,0 +1,79 @@
+//vasriaveis globais
+const pokemonName = document.querySelector(".pokemon_name")
+const pokemonid = document.querySelector(".pokemon_number")
+const pokemonimg = document.querySelector(".gif_pokemon")
+const form = document.querySelector(".form")
+const input = document.querySelector(".input")
+const button_prev = document.querySelector(".btn-prev")
+const button_next = document.querySelector(".btn-next")
+let searchPokemon = 0;
+
+//capturar dados API
+const fatchpokemon = async (pokemon) => {
+    const apiresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}/`)
+    if (apiresponse.status === 200) {
+        const data = await apiresponse.json();
+        return data;
+    }
+    // else {
+    //     alert('conexão com API não ocorreu!!!')
+    // }
+}
+
+//renderizar dados pokemon
+const renderPokemon = async (pokemon) => {
+
+    pokemonName.innerHTML = "...";
+    pokemonid.innerHTML = " ";
+
+
+    const data = await fatchpokemon(pokemon);
+    console.log(data)
+
+    if (data) {
+        pokemonName.innerHTML = data.name;
+        pokemonid.innerHTML = data.id;
+        pokemonimg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+        input.value = "";
+        searchPokemon = data.id;
+        
+    }
+
+    else {
+        pokemonimg.src = "https://thumbs.dreamstime.com/z/mensagem-do-computador-do-erro-46816687.jpg"
+
+        pokemonName.innerHTML = "não encontrado"
+
+        input.value = "";
+    }
+
+}
+
+//procurar pokemon pelo input
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    renderPokemon(input.value.toLowerCase());
+});
+//eventos dos botoes prev e next
+
+button_prev.addEventListener("click", () => {
+
+    
+    if (searchPokemon>1) { 
+        searchPokemon -= 1;
+        renderPokemon(searchPokemon);
+    }
+
+});
+
+button_next.addEventListener("click", () => {
+
+    searchPokemon += 1;
+    renderPokemon(searchPokemon);
+});
+
+renderPokemon(1);
+screen.orientation.lock('portrait')
+screen.orientation.lock('landscape')
+screen.orientation.unlock()

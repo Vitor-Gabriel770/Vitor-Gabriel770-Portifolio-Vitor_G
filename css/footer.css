@@ -1,0 +1,37 @@
+#contato {
+    background-color: #4d4df7;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+#contato hr {
+    border-bottom: 2px solid white;
+    width: 20%;
+}
+
+.contatos_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.contatos_card img {
+    width: 6%;
+    padding-bottom: 15%;
+    margin-right: 5px;
+}
+
+.contatos_card a {
+    color: white;
+    font-size: 22px;
+    padding-bottom: 15%;
+}
+
+#cont_horizontal {
+    display: flex;
+    justify-content: space-around;
+}

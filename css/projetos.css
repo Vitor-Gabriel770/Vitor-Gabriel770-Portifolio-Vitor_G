@@ -1,0 +1,99 @@
+
+hr{
+    border-bottom:2px solid #2d2dca;
+    width: 20%;
+    margin: 1% auto;
+}
+
+#projetos h2{
+    font-size: 30px;
+    margin-top: 2px;
+    color:#2d2dca
+}
+
+#projetos h3{
+    font-size: 35px;
+    color: rgb(255, 247, 247);
+    text-shadow: 2px 4px 4px rgb(0, 0, 0);   
+}
+
+
+#projetos div:nth-child(1){
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ8Mks2NU9Ps1sxutc-h8NKxqvd9W3u1n6A&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -15rem  ;
+    background-size: 100%;
+}
+
+#projetos div:nth-child(2){
+    background-image: url('https://i.pinimg.com/originals/e4/34/2a/e4342a4e0e968344b75cf50cf1936c09.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20rem;
+    background-size: 100%;
+}
+
+#projetos div:nth-child(3){
+    background: linear-gradient(550deg,black,red,rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+#projetos div:nth-child(4){
+    background-image: linear-gradient(170deg,green,rgb(195, 195, 0),red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20rem;
+    background-size: 100%;
+}
+
+#projetos div:nth-child(5){
+    background-image: linear-gradient(170deg,rgb(0, 92, 128),rgb(0, 162, 255),red);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#conteudos_projetos{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+    padding-left: 2%;
+}
+
+#conteudos_projetos div{
+    width: 48%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 2%;
+    background-color: black;
+}
+
+#conteudos_projetos div:nth-child(5){
+    width: 98%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 2%;
+    background-color: black;
+}
+
+#conteudos_projetos div img{
+    display: block;
+    width: 20%;
+    margin: 2% auto 0;
+    border-radius: 5rem;
+}
+
+#conteudos_projetos p{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    
+}
+
+
+
+

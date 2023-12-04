@@ -1,0 +1,50 @@
+header {
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.245), rgb(0, 0, 0)), url('../Fotos/1.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 60vh;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+header h1 {
+    color: #fe07f6;
+    border-bottom: 2px solid #5a5aff;
+
+}
+
+header .botao {
+    color: white;
+    background-color: #191970;
+    padding: 0.6rem 1.4rem;
+    font-size: .9rem;
+    border-radius: 5px;
+    transform: skew(-12deg);
+}
+
+header .botao:hover {
+    padding: 0.7rem 1.9rem;
+    font-size: 20px;
+    background-color: #fe07f6;
+}
+
+.botao_destaque {
+    color: white;
+    background-color: black;
+    padding: 0.6rem 1.4rem;
+    font-size: 18px;
+    margin-left: 3%;
+    border-radius: 5px;
+    transform: skew(-12deg);
+}
+
+.botao_destaque:hover {
+    padding: 0.6rem 1.9rem;
+    font-size: 20px;
+    background-color: #fe07f6;
+}

@@ -1,0 +1,202 @@
+html {
+    display: grid;
+    place-items: center;
+    background-image: url('https://img.wallpapic-br.com/i8743-925-739/medium/galaxia-nebulosa-pretos-espaco-sideral-imagem-de-fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+
+}
+
+label {
+    text-transform: uppercase;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: #ff0000;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #08558b;
+}
+
+a {
+    font-size: .9rem;
+}
+
+a:hover {
+    color: #08558b;
+
+}
+
+/* CONTAINER LOGIN */
+
+#login-container {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ8Mks2NU9Ps1sxutc-h8NKxqvd9W3u1n6A&usqp=CAU');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18rem;
+    padding: 1.20rem;
+    border-radius: .625rem;
+}
+
+/* FORM */
+
+form {
+    color: #ff0000;
+    margin: 2.5rem;
+
+}
+
+label,
+input {
+    background: none;
+    display: block;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 6%;
+    font-size: 1rem;
+    width: 98%;
+    margin-bottom: 1.25rem;
+
+}
+
+#forgot-pass {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #ffffff39;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    margin-top: 1.6rem;
+    cursor: pointer;
+
+
+}
+
+input[type="submit"]:hover {
+    background-color: #08558b;
+
+}
+
+/* REDES SOCIAIS */
+
+#social-container,
+#social-container p {
+    color: white;
+    margin-bottom: 1.10rem;
+}
+
+#social-container img {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+.fa-facebook-f {
+    background-color: #1E7CF2;
+}
+
+.fa-linkedin {
+    background-color: #306CB3;
+}
+
+.fa-whatsapp {
+    background-color: #08FE6C;
+}
+
+#register-container p {
+    color: white;
+}
+
+#register-container a {
+    font-size: .9rem;
+
+}
+
+@media (max-width:600px) {
+    a {
+        font-size: .9rem;
+    }
+    
+    /* CONTAINER LOGIN */
+    
+    #login-container {
+        width: 20rem;
+        margin-bottom: 25%   ;
+        padding: 1.20rem;
+        border-radius: .625rem;
+    }
+    
+    /* FORM */
+    
+    form {
+        margin: 1.8rem;
+    }
+    
+    label {
+        font-size: .8rem;
+    }
+    
+    input {
+        padding: 6%;
+        font-size: .8rem;
+        margin-bottom: 1.8rem;
+    
+    }
+    
+    input[type="submit"] {
+        padding: 8%;
+        margin-top:2rem;
+    }
+    
+    #social-container,
+    #social-container p {
+        margin-bottom: .8rem;
+        font-size: .9rem;
+    }
+    
+    #social-container img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    
+    #register-container p {
+        font-size: .9rem;
+    }
+    
+    #register-container a {
+        font-size: .9rem;   
+    }
+}
